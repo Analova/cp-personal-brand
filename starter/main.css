@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 
 
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -19,7 +20,7 @@ body {
     background: #eeeeee;
 }
 
-/* top section */
+/* ---------- TOP SECTION */
 #top {}
 
 #top .container {
@@ -86,7 +87,7 @@ body {
     margin: 0 auto;
 }
 
-/*services */
+/*------------ SERVICES SECTION */
 #services {
     padding: 80px 15px;
 }
@@ -171,7 +172,7 @@ body {
     border-bottom: 2px solid #ffc855;
 }
 
-/* #######---------------porforlio section */
+/* #######---------------PORTFOLIO SECTION */
 a {
     text-decoration: none;
 }
@@ -384,6 +385,79 @@ a {
     grid-column: 3 / 4;
      grid-row: 4/6;
 }
+
+
+/*-------------------------------------EXPERIENCE*/
+#experience{
+    padding:80px 15px;
+   
+}
+
+#experience .container .large-title{
+   color:#c6e4ff;
+    font-weight:700;
+    font-size:4.5rem;
+    text-align:center;
+    text-transform:uppercase;
+      position:relative;
+    left: -75px;
+}
+#experience .container .experience-contaner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#experience .container .experience-contaner .large-icons .square {
+    border: 30px solid #52b8ff;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    top: -100px;
+}
+
+#experience .container .experience-contaner .large-icons .square .blue-box {
+    width: 150px;
+    height: 150px;
+    background: #52b8ff;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#experience .container .experience-contaner .large-icons .circle {
+    border: 30px solid #ffc853;
+    padding: 5px;
+    display: inline-block;
+       border-radius: 50%;
+    position:relative;
+    top:50px;
+    left:50px;
+    
+}
+
+#experience .container .experience-contaner .large-icons .circle .yellow-box {
+    color: #ffc853;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:150px;
+    width:150px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 1.2rem;
+     text-transform: uppercase;
+}
+
+
+
+
 
 
 
