@@ -14,6 +14,8 @@
     margin: 0 auto;
 }
 
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -26,6 +28,124 @@ body {
     font-family: 'Roboto', sans-serif;
     background: #eeeeee;
 }
+
+header{
+    display: flex !important;
+    padding:20px !important;
+    justify-content: space-between;
+  
+}
+
+header .logo{
+    font-size:1.5rem;
+    font-weight: 700;
+    text-transform:uppercase;
+    color:white;
+  display: flex;
+  
+}
+
+header .logo .name{
+    background:black;
+    padding:15px 20px ;
+    color:white;
+    text-decoration: none;
+}
+
+
+
+header .header-menu{
+  display: flex;
+    justify-content: center;
+    align-items: center 
+   
+}
+
+header .header-menu a{
+    font-size:1rem;
+    text-transform:uppercase;
+    text-decoration: none;
+    color:black;
+    padding: 0 10px ;
+/*   transition: all .5s ease-in-out;*/
+}
+
+
+header .header-menu a:hover{
+   font-weight: 700;
+    color:rgba(255,53,53,0.8)
+   
+}
+
+header .menu-btn{
+   font-weight: 700;
+    color:rgba(255,53,53,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+    font-size:2rem;
+    display:none;
+    cursor: pointer;
+   
+}
+
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    position:absolute;
+    top:0;
+    height:100vh;
+    z-index:10;
+    background:white;
+    width:50%;
+    transform:translate3d(-100%,0,0);
+    transition: all .4s ease-in-out;
+}
+
+.mobile-menu.active{
+   transform:translate3d(0,0,0);
+  -webkit-box-shadow: 0px 0px 25px 21px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 0px 25px 21px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 25px 21px rgba(0, 0, 0, 0.08);
+   
+}
+
+.mobile-menu a {
+    padding: 15px ;
+    text-decoration: none;
+    color: black;
+
+}
+
+.mobile-menu a:hover {
+     background:rgba(255,53,53,0.8);
+    color:white;
+}
+
+
+@media only screen and(max-width:960px){
+    .container{width:100%}
+    
+}
+
+
+/*Phones */
+@media only screen and (max-width: 767px){
+    header .header-menu{
+        display:none;
+    }
+    header .menu-btn{
+    display:flex;
+   
+}
+    header .logo{
+    font-size:1.3rem;
+    padding:10px 15px ;
+}
+}
+
 
 
 
