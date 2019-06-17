@@ -1,0 +1,109 @@
+#portfoli-projects {
+    padding: 100px 15px;
+    background: white;
+}
+
+#portfoli-projects .project-image {
+    margin-bottom: 3rem;
+}
+
+#portfoli-projects .project-image .img {
+    height: 450px;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+#portfoli-projects h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+#portfoli-projects .info .buttons {
+    padding: 20px 0;
+}
+
+#portfoli-projects .info .buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: white;
+    background: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .5s ease-in-out;
+}
+
+#portfoli-projects .info .buttons a .fas{
+  color:#ef3e3e;
+margin-right:10px;
+}
+
+
+
+#portfoli-projects .info .buttons a:hover {
+   background: #ef3e3e;
+}
+
+#portfoli-projects .info .buttons a:hover .fas{
+  color:black;
+}
+
+
+#portfoli-projects p {
+    display: inline-block;
+    border-radius: 3px;
+    color: #929294;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    text-transform: capitalize;
+    margin-bottom: 1.8rem;
+}
+
+#portfoli-projects .technologies {
+    padding:100px 0;
+}
+
+#portfoli-projects h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+#portfoli-projects .technologies .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+#portfoli-projects .technologies .icons .icon img {
+    width: 100%;
+    max-width: 150px;
+
+}
+
+
+#portfoli-projects .video {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+/*Tablet*/
+@media only screen and(max-width:960px){
+    
+
+}
+
+
+/*Phones */
+@media only screen and (max-width: 767px){
+  
+}
