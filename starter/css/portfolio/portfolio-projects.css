@@ -11,9 +11,9 @@
     height: 450px;
     width: 100%;
     background-size: cover !important;
-    background-position: center center !important;
+    background-position: top center !important;
     background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
+   
 }
 
 #portfoli-projects h1 {
@@ -83,9 +83,20 @@ margin-right:10px;
     justify-items: center;
 }
 
+
+#portfoli-projects .technologies .icons img {
+    filter:grayscale(100%);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#portfoli-projects .technologies .icons img:hover {
+    filter:grayscale(0%);
+}
+
 #portfoli-projects .technologies .icons .icon img {
     width: 100%;
-    max-width: 150px;
+    max-width: 60px;
 
 }
 
@@ -95,15 +106,50 @@ margin-right:10px;
     text-align: center;
 }
 
+/*
+#portfoli-projects .video iframe{
+   width:100% !important;
+}
+*/
 
-/*Tablet*/
-@media only screen and(max-width:960px){
+/*Phones */
+@media only screen and (max-width: 960px){
+     #portfoli-projects h1{
+        font-size:2rem;
+         text-align: center;
+    }
     
+     #portfoli-projects h3{
+         text-align: center;
+    }
+    #portfoli-projects p{
+        font-size:1rem;
+    }
+    #portfoli-projects .video iframe  {
+  width:100%;
 
+}
+  
 }
 
 
 /*Phones */
 @media only screen and (max-width: 767px){
+    #portfoli-projects  {
+
+}
+    
+    
+#portfoli-projects .technologies .icons {
+    grid-template-columns: 1fr 1fr;
+  
+}
+      #portfoli-projects .info .buttons {
+  text-align:center;
+}
+    
+    #portfoli-projects .info .buttons a {
+   margin-bottom: 10px;
+}
   
 }
